@@ -8,6 +8,6 @@ class DummyTest extends TestCase
 {
     public function test_it_works()
     {
-        $this->assertSame(2, 1 + 1);
+        $this->assertSame(true, 1 + 1 === 2);
     }
 }

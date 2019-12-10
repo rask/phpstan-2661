@@ -1,6 +1,6 @@
 # rask/phpstan-2661
 
-A bug reproduction repository for phpstan/phpstan#2661.
+(Originally this was to reproduce a PHAR not being loadable in PHPStan via `autoload_files`, but has been resolved.)
 
 Run
 
@@ -8,7 +8,7 @@ Run
     $ phive install
     $ composer test
     $ composer phpstan
-    
-The PHPStan configuration should load a file properly from the `tools/phpunit.phar` package, but does not.
 
-By default Phive installs PHPUnit as `phpunit`, but I've configured to install it as `phpunit.phar` to make it instantly browsable in PHPStorm for instance.
+What should happen: PHPUnit files are loaded form PHAR properly, and using non-Composer PHPStan binary should load PHPUnit extension properly, and then display a static analysis error regarding PHPUnit's `assertSame(true, ...)`.
+
+By default Phive installs PHPUnit as `tools/phpunit`, but I've configured to install it as `tools/phpunit.phar` to make it instantly browsable in PHPStorm for instance.

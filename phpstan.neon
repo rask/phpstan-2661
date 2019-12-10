@@ -1,8 +1,9 @@
 includes:
     - vendor/phpstan/phpstan-phpunit/extension.neon
+    - vendor/phpstan/phpstan-phpunit/rules.neon
 parameters:
     paths:
         -   tests
     level: 3
     autoload_files:
-        - phar://%rootDir%/../../../tools/phpunit.phar
+        - phar://%rootDir%/../tools/phpunit.phar
