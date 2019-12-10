@@ -5,4 +5,4 @@ parameters:
         -   tests
     level: 3
     autoload_files:
-        -   phar://./tools/phpunit.phar/.phar/stub.php
+        - phar://%rootDir%/../../../tools/phpunit.phar
