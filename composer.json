@@ -1,0 +1,22 @@
+{
+    "name": "rask/phpstan-2661",
+    "description": "Bug reproduction project",
+    "license": "MIT",
+
+    "require": {
+        "php": ">=7.2"
+    },
+
+    "require-dev": {
+        "phpstan/phpstan-phpunit": "^0.12.0"
+    },
+
+    "autoload-dev": {
+        "App\\Tests\\": "tests/"
+    },
+
+    "scripts": {
+        "phpstan": "tools/phpstan analyze",
+        "test": "tools/phpunit.phar tests"
+    }
+}
